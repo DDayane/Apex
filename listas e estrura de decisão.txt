@@ -1,0 +1,162 @@
+1 - List<String> bandasFav = new list <String> ();
+
+	bandasFav.add ('Maroon 5');
+	bandasFav.add ('Imagine Dragons');
+	bandasFav.add ('Pixote');
+	bandasFav.add ('Stromae');
+
+System.debug ('Minha Lista Favorita: ' + bandasFav);
+	
+	bandasFav.remove(3);
+	bandasFav.remove(2);
+	
+System.debug ('Minha Lista Favorita1: ' + bandasFav);
+
+	bandasFav.add ('Revelação');
+	bandasFav.add ('Belo');
+	bandasFav.add ('ExaltaSamba');
+
+System.debug ('Minha Lista Favorita2: ' + bandasFav);
+
+
+/////////////////////////////////////////////////////////////
+
+2- List<String> bandasFav = new String [8];
+    
+	bandasFav.set (0,'Maroon 5');
+	bandasFav.set (1,'Imagine Dragons');
+	bandasFav.set (2,'Pixote');
+	bandasFav.set (3,'Stromae');
+	bandasFav.set (4,'Revelação');
+	bandasFav.set (5,'Belo');
+	bandasFav.set (6,'ExaltaSamba');
+	bandasFav.set (7,'Linkin Park');
+
+System.debug ('Minha Lista Favorita: ' + bandasFav);
+	
+	bandasFav.set (2,'Colher');
+
+System.debug ('Minha Lista Favorita2: ' + bandasFav);  
+	
+bandasFav.add ('Flor');
+        
+System.debug ('Minha Lista Favorita3: ' + bandasFav);  
+
+	bandasFav.remove(8);
+	
+System.debug ('Minha Lista Favorita4: ' + bandasFav); 
+
+///////////////////////////////////////////////////////////////
+
+3 - List<Integer> Idade = new List<Integer>();
+	
+    Idade.add (9);
+    Idade.add (10);
+	    
+Decimal media;
+
+media = (Idade.get(0) + Idade.get (1))/2;
+
+	System.debug (media);   
+
+Boolean armazena = Idade.size()>=0? True : false;
+
+	system.debug(armazena);
+
+If (Idade.get(0) > Idade.get (1)){
+    System.debug ('A primeira idade é Maior:  ' + Idade.get(0));
+} Else if ( Idade.get (1) > Idade.get(0)){
+    system.debug ('A segunda Idade é Maior:  ' + Idade.get(1));
+}Else{
+    System.debug ('Idades são iguais');
+}
+
+///////////////////////////////////////////////////////////
+
+ 
+4- List<Decimal> Patinhos = new Decimal [5];
+
+Boolean Verificar = Patinhos.size()>= 0? True:False;
+
+System.debug (verificar);
+
+	Patinhos.set (0, 10);
+	Patinhos.set (1, 20);
+	Patinhos.set (2, 30);
+	Patinhos.set (3, 40);
+	Patinhos.set (4, 50);
+
+System.debug (Patinhos);
+
+Decimal Valores = Patinhos.get(1) + Patinhos.get(4);
+
+System.debug (Valores);
+
+
+Patinhos.clear();
+
+System.debug ('Resulte2: ' + Patinhos);
+
+///////////////////////////////////////////////////////////
+
+5- List<Integer> L1 = new List<Integer>();
+
+For(Integer cont = 1; cont <= 10; cont++){
+    L1.add(cont);
+   
+}
+System.debug (L1);
+;
+
+////////////////////////////////////////////////////////////////
+
+
+6- List<Integer> Par = new List<Integer>();
+List<Integer> Impar = new List<Integer>();
+  
+For(integer cont = 1; cont <= 10; cont++){
+    
+    If (math.mod(cont, 2) == 0 ){             
+        Par.add(cont);
+}Else if (math.mod(cont, 2) > 0 ){            
+        Impar.add(cont);
+}
+}
+System.debug ('Números Pares: ' + Par);
+System.debug ('Números Impares: ' + Impar);
+
+////////////////////////////////////////////////////////////////
+
+
+7- Map< String, String> Cores = new Map< String, String>();
+
+Cores.put ('I', 'Amarelo');
+Cores.put ('II', 'Azul');
+Cores.put ('III', 'Verde');
+Cores.put ('IV', 'Cinza');
+Cores.put ('V', 'Marrom');
+Cores.put ('VI', 'Vermelho');
+
+
+Map< String, String> Ton = new Map< String, String>();
+
+Ton.put ('I', 'Escuro');
+Ton.put ('II', 'Claro');
+
+System.debug (Cores);
+System.debug (Ton);
+
+Cores.remove('VI');
+Cores.remove('V');
+Cores.remove('IV');
+
+System.debug (Cores);
+
+Cores.put ('VI','Laranja');
+Cores.put ('V','Branco');
+Cores.put ('IV','Preto');
+
+System.debug (Cores);
+
+
+System.debug (Cores.get('I')+ ' '+ Ton.get('I') + ',' + Cores.get('V')+ ' '+ Ton.get('II') + ',' +Cores.get('II')+ ' '+ Ton.get('I'));
