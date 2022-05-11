@@ -1,0 +1,125 @@
+Integer n1 = 8;
+
+System.debug (n1);
+
+If (n1 > 10){
+    System.debug ('É MAIOR QUE 10!');
+} Else {
+    System.debug ('NÃO É MAIOR QUE 10!');
+    }
+///////////////////////////////////////////////////////
+
+Decimal n1 = -1;
+
+System.debug (n1);
+
+If (n1 >= 0){
+    System.debug('Positivo');
+} Else if (n1 <= 0){
+    System.debug('Negativo');
+} Else {
+	System.debug('Valor Invalido');}
+/////////////////////////////////////////////////////
+Integer n1 = 70;
+Integer n2 = 50;
+
+If (n1 == n2){
+    System.debug ('Valores informado são iguais');
+} Else if ( n1 > n2){
+    system.debug (n2 + ' ' + n1);
+}Else {
+      System.debug (n1 + ' ' + n2);
+}
+/////////////////////////////////////////////////////
+
+Integer n1 = 20;
+Integer n2 = 50;
+
+If (n1 == n2){
+    System.debug ('Valores informado são iguais');
+} Else if ( n1 > n2){
+    system.debug (n1);
+}Else {
+      System.debug (n2);
+  }
+
+/////////////////////////////////////////////////////
+Integer AnoDeNasc = 1992;
+Integer AnoAtual = system.today().year();
+Integer Idade = AnoAtual - AnoDeNasc;
+
+If (Idade == 16 || Idade == 17){
+    System.debug ('Voto opcional :) ');
+        } Else if ( Idade >= 18 ){
+            System.debug ('Voto Obrigatório');
+                }Else {
+                    System.debug ('Você não pode votar');
+                }
+/////////////////////////////////////////////////////
+Decimal a1, a2, Media;
+
+a1 = 4;
+a2 = 3;
+
+Media = (a1 + a2)/2;
+
+System.debug ('Média Final:  ' + Media);
+
+If (Media >= 6){
+    System.debug ('Aprovado');
+        } Else {
+            System.debug ('Reprovado');
+        } 
+
+/////////////////////////////////////////////////////
+
+Integer n1 = 70;
+Integer n2 = 50;
+
+If (n1 == n2){
+    System.debug ('Números iguais');
+} Else if ( n1 > n2){
+    system.debug (' Primeiro é maior');
+}Else {
+      System.debug ('Segundo maior ');
+}
+/////////////////////////////////////////////////////
+
+String NomeDoProduto = 'FlordeLis';
+Decimal QuantProd = 15;
+Decimal ValorDoProduto = 2; 
+Decimal Total = QuantProd * ValorDoProduto;
+
+System.debug ('Produto: ' + nomedoproduto + '\n Total Sem Desconto: R$  ' + Total);
+
+If (QuantProd <= 5){
+    System.debug ('Ganhou Desconto de 2% ');
+    Decimal Des = total * 0.02;
+    Decimal TotalDesc = Total - Des;
+    System.debug ('Valor Total com Desconto: R$  ' + TotalDesc);
+}Else if (QuantProd > 5 && QuantProd <= 10 ){
+    System.debug ('Ganhou Desconto de 3% ');
+    Decimal Des = total * 0.03;
+    Decimal TotalDesc = Total - Des;
+    System.debug ('Valor Total com Desconto: R$  ' + TotalDesc);
+}Else if (QuantProd > 10){
+    System.debug ('Ganhou Desconto de 5% ');
+    Decimal Des = total * 0.05;
+    Decimal TotalDesc = Total - Des;
+    System.debug ('Valor Total com Desconto: R$  ' + TotalDesc);
+}
+/////////////////////////////////////////////////////
+
+Integer NumeroConta = 123456;
+Decimal Saldo = 200;
+Decimal Debito = 300;
+Decimal Credito = 30;
+Decimal SaldoAtual = saldo - debito + credito;
+
+System.debug (SaldoAtual);
+
+If (SaldoAtual >= 0){
+    System.debug ('Saldo Positivo');
+        }Else {
+            System.debug ('Saldo Negativo');}
+
