@@ -1,0 +1,93 @@
+Integer n1 = 10;
+
+System.debug (n1);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+String NomeDoProduto = 'FlordeLis';
+String ValorDoProduto = '15,9'; 
+
+System.debug ('Produto: ' + nomedoproduto + '\n valor do produto: ' + valordoproduto);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Integer n2 = 20;
+
+System.debug (n2--);
+System.debug (n2);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Decimal n3 = 15.6;
+Decimal n4 = 10.5;
+
+Decimal Resultado;
+
+Resultado = n3 + n4;
+
+System.debug ('Resultado: '+ resultado);    
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Integer Idade = 28;
+Integer Ano = 2022;
+Integer media;
+
+Media = ano - idade;
+
+System.debug ('Nascido em : ' + media);
+
+
+Segundo exemplo :
+
+Integer idade = 32;
+Integer valorDaSubtracao = system.today().year() - idade;
+ 
+System.debug('Nascido em: ' + valorDaSubtracao);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Decimal Altura = 5;
+Decimal Base = 8;
+Decimal dimensoes;
+    
+Dimensoes = altura * base;
+
+system.debug ('Area: ' + dimensoes);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Decimal Salario = 600; 
+Decimal reajuste = 1.25;
+Decimal ValorFinal;
+
+ValorFinal = salario*reajuste;
+
+System.debug ('Reajuste Salarial: ' + ValorFinal..setScale(2)); - o setscale é para as casas decimais 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Decimal n5, n6, n7, Media;
+
+n5 = 6;
+n6 = 8;
+n7 = 10;
+
+Media = (n5 + n6 + n7) /3;
+
+System.debug ('Média Final:  ' + media);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Decimal n5, n6, n7, Media;
+
+n5 = 6*2;
+n6 = 8*3;
+n7 = 10*5;
+
+Media = (n5 + n6 + n7)/10;
+
+System.debug ('Média Final:  ' + media);
+    
+
+
